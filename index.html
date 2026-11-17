@@ -3,10 +3,250 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Trang chủ bài tập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #263b5e;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        nav {
+            background-color: #1d2e49;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 950px;
+            margin: 25px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #263b5e;
+            margin-bottom: 15px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .profile img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .lab-list {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .lab {
+            flex: 1;
+            min-width: 220px;
+            padding: 18px;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+            background-color: #fafbfd;
+        }
+
+        .lab h3 {
+            color: #263b5e;
+            margin-bottom: 8px;
+        }
+
+        .lab a {
+            display: inline-block;
+            background-color: #315f9b;
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        footer {
+            background-color: #263b5e;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 92%;
+            }
+
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h2>BÀI TẬP TUẦN 3</h2>
-    <a href="./VeNha/index.html">Vào bài làm</a>
+
+    <header>
+        <h1>MY PORTFOLIO</h1>
+        <p>JavaScript Labs - Phát triển ứng dụng TMĐT</p>
+    </header>
+
+    <nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#labs">Bài thực hành</a>
+        <a href="#knowledge">Kiến thức</a>
+        <a href="#reflection">Tổng kết</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>Thông tin cá nhân</h2>
+
+            <div class="profile">
+                <img src="./avatar.jpg" alt="Ảnh đại diện">
+
+                <div>
+                    <p><strong>Họ và tên:</strong> Nguyễn Ngọc Hà My</p>
+                    <p><strong>MSSV:</strong>31241027357</p>
+                    <p><strong>Lớp:</strong> EE0002</p>
+                    <p><strong>Môn học:</strong> Phát triển ứng dụng TMĐT</p>
+                    <p><strong>GitHub:</strong>
+                        <a href="https://mynguyen-123.github.io/BaiTapCaNhan-PTUD/">
+                            GitHub Pages
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Giới thiệu</h2>
+            <p>
+                Đây là trang portfolio tổng hợp quá trình học tập và thực hiện
+                ba bài thực hành JavaScript. Thông qua các bài Lab, em được
+                làm quen với JavaScript, tìm hiểu cách tương tác với các phần
+                tử HTML và sử dụng thư viện jQuery. Qua đó, em hiểu hơn về
+                cách JavaScript hỗ trợ xây dựng các chức năng tương tác trên website.
+            </p>
+        </section>
+
+        <section id="labs">
+            <h2>Các bài thực hành JavaScript</h2>
+
+            <div class="lab-list">
+
+                <div class="lab">
+                    <h3>Lab 08</h3>
+                    <p><strong>Language Foundations</strong></p>
+                    <p>Tìm hiểu biến, kiểu dữ liệu, hàm, mảng và đối tượng.</p>
+                    <a href="./ch08-lab-start-master/">Xem bài Lab</a>
+                </div>
+
+                <div class="lab">
+                    <h3>Lab 09</h3>
+                    <p><strong>DOM and Events</strong></p>
+                    <p>Thực hành DOM, thay đổi HTML và xử lý sự kiện.</p>
+                    <a href="./ch09-lab-start-master/">Xem bài Lab</a>
+                </div>
+
+                <div class="lab">
+                    <h3>Lab 10</h3>
+                    <p><strong>jQuery</strong></p>
+                    <p>Làm quen với jQuery, selectors, events và hiệu ứng.</p>
+                    <a href="./ch10-lab-start-master/">Xem bài Lab</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="knowledge">
+            <h2>Kiến thức và kỹ năng đã học</h2>
+
+            <h3>Lab 08 - Language Foundations</h3>
+            <ul>
+                <li>Sử dụng biến và các kiểu dữ liệu.</li>
+                <li>Làm việc với String, Date, Array và Object.</li>
+                <li>Viết và sử dụng các hàm JavaScript.</li>
+            </ul>
+
+            <h3>Lab 09 - DOM and Events</h3>
+            <ul>
+                <li>Truy xuất và thay đổi phần tử HTML thông qua DOM.</li>
+                <li>Xử lý sự kiện click, mouseover và mouseout.</li>
+                <li>Làm việc với biểu mẫu và kiểm tra dữ liệu.</li>
+            </ul>
+
+            <h3>Lab 10 - jQuery</h3>
+            <ul>
+                <li>Sử dụng jQuery Selectors.</li>
+                <li>Xử lý sự kiện và thao tác DOM.</li>
+                <li>Tạo hiệu ứng và thực hiện GET Requests.</li>
+            </ul>
+        </section>
+
+        <section id="reflection">
+            <h2>Tự đánh giá sau khi hoàn thành</h2>
+            <p>
+                Sau khi hoàn thành ba bài Lab, em đã hiểu hơn về cách sử dụng
+                JavaScript để xây dựng các chức năng tương tác trên website.
+                Em có thể sử dụng biến, hàm, mảng, thao tác với DOM, xử lý
+                sự kiện và làm quen với thư viện jQuery. Trong quá trình thực
+                hiện, Lab 09 giúp em hiểu rõ hơn cách JavaScript tương tác
+                với các thành phần HTML, tuy nhiên việc lựa chọn phần tử và
+                xử lý sự kiện đôi lúc còn gặp khó khăn. Những kiến thức này
+                có thể được vận dụng để kiểm tra biểu mẫu đăng ký, cập nhật
+                thông tin sản phẩm và xây dựng các chức năng tương tác trong
+                website thương mại điện tử. Em cần tiếp tục luyện tập để
+                thành thạo hơn khi viết mã nguồn.
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 - My JavaScript Learning Portfolio</p>
+    </footer>
+
 </body>
 </html>
