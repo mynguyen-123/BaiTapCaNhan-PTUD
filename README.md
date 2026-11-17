@@ -1,12 +1,12 @@
 BÀI THỰC HÀNH JAVASCRIPT
 1. Thông tin sinh viên
 - Họ và tên: Nguyễn Ngọc Hà My
-- Mã số sinh viên: [Nhập MSSV]
-- Lớp học phần: EE0002
+- Mã số sinh viên: 31241027357
+- Lớp: EE0002
 - Môn học: Phát triển ứng dụng TMĐT
 - Giảng viên: TS. Nguyễn Mạnh Tuấn
-- GitHub Repository: [Dán link repository GitHub tại đây]
-- GitHub Pages: [Dán link website GitHub Pages tại đây]
+- GitHub Repository: (https://mynguyen-123.github.io/BaiTapCaNhan-PTUD/)
+
 2. Mục tiêu thực hiện
 Thực hiện ba bài thực hành JavaScript nhằm làm quen với ngôn ngữ JavaScript và vận dụng các kiến thức đã học để xây dựng những chức năng tương tác trên website. Qua các bài Lab, sinh viên thực hành từ những kiến thức nền tảng của JavaScript đến thao tác với DOM, xử lý sự kiện và sử dụng thư viện jQuery.
 3. Cấu trúc thư mục
